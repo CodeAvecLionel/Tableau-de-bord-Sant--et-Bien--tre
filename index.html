@@ -1,0 +1,68 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Tableau de bord Santé et Bien-être</title>
+</head>
+
+<body>
+  <header>
+    <h1 id="mainTitle">Tableau de bord Santé et Bien-être</h1>
+  </header>
+  <div class="settings">
+    <select id="themeSelect">
+      <option value="light">Thème clair</option>
+      <option value="dark">Thème sombre</option>
+    </select>
+    <select id="langSelect">
+      <option value="fr">Français</option>
+      <option value="en">English</option>
+    </select>
+  </div>
+  <div class="container">
+    <div class="dashboard">
+      <div class="card">
+        <h2 id="activityTitle">Activité Physique</h2>
+        <div class="activity-stats">
+          <div class="stat">
+            <div class="stat-value" id="steps">0</div>
+            <div class="stat-label" id="stepsLabel">Pas</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value" id="distance">0</div>
+            <div class="stat-label" id="distanceLabel">km</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value" id="calories">0</div>
+            <div class="stat-label" id="caloriesLabel">Cal</div>
+          </div>
+        </div>
+        <canvas id="activityChart"></canvas>
+      </div>
+      <div class="card">
+        <h2 id="sleepTitle">Sommeil</h2>
+        <canvas id="sleepChart"></canvas>
+      </div>
+      <div class="card">
+        <h2 id="nutritionTitle">Alimentation</h2>
+        <canvas id="nutritionChart"></canvas>
+      </div>
+      <div class="card">
+        <h2 id="goalsTitle">Objectifs Personnels</h2>
+        <ul class="goals-list" id="goalsList">
+          <!-- Les objectifs seront ajoutés ici dynamiquement -->
+        </ul>
+        <div class="advice" id="adviceBox">
+          <!-- Les conseils seront ajoutés ici dynamiquement -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

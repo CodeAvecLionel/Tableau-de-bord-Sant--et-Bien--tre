@@ -1,0 +1,100 @@
+
+  :root {
+    --primary-color: #4a90e2;
+    --background-color: #f0f4f8;
+    --text-color: #333;
+    --card-background: white;
+    --advice-background: #e8f5e9;
+    --advice-border: #4caf50;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  h1 {
+    margin: 0;
+  }
+  .dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .card {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  .card h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+  }
+  .activity-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .stat {
+    text-align: center;
+  }
+  .stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  .stat-label {
+    font-size: 14px;
+    color: #666;
+  }
+  canvas {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  .goals-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .goals-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--background-color);
+    border-radius: 4px;
+  }
+  .advice {
+    background-color: var(--advice-background);
+    border-left: 4px solid var(--advice-border);
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .settings {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--card-background);
+    color: var(--text-color);
+  }
